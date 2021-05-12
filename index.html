@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DZ12</title>
+</head>
+
+<body>
+    <script>
+        //Задание с WHILE
+
+        //Задание №1
+        /*     i= 0
+             let userValue = +prompt(`Сколько раз необходимо вывести на экран "#"`)
+            while (i < userValue) {
+                 i++;
+                document.write(`<h2>${i} . # </h2>`)
+            }
+             */
+
+        //Задание №2
+        /* i = 1;
+          let userVal = +prompt(`Укажите число`);
+         while (i <= userVal && 0 < i) {
+             document.write(`<h2>Ваше значение ${i}</h2>`);
+             i++;}*/
+
+        //Задание №3
+        /* i = 1
+         let userVal1 = +prompt(`Укажите числo`);
+         let userVal2 = +prompt(`Укажите степень числа`);
+         while (i < userVal2 && 0 < i) {
+            i++;}
+          document.write(`<h2>Ваше значение ${userVal1 ** userVal2}</h2>`);*/
+
+        //Задание №4
+        i = 1;
+        let userVal3 = +prompt(`Укажите первое числo`);
+        let userVal4 = +prompt(`Укажите второе числа`);
+        while (i < userVal3 && i < userVal4) {
+            if (userVal3 === isNaN || userVal4 === isNaN) {
+                document.write(`<h2>неверно указаны числа</h2>`)
+                break;
+            } 
+            else {
+                outer: while (true) {
+                    i++;
+                    if (i <= userVal4 && i <= userVal3){
+                         userVal4 % i === userVal3 % i === 0 ? document.write(`<h2>Общий делитель`${i}`</h2>`) : document.write(``);  break outer;
+                    } else {
+                        document.write(`<h2>нет общих делителей</h2>`);
+                       
+                        }
+
+                    }
+                }
+            }
+        
+
+    </script>
+</body>
+
+</html>

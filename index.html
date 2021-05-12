@@ -44,10 +44,10 @@
                 break;
             } 
             else {
-                outer: while (true) {
+               while (true) {
                     i++;
                     if (i <= userVal4 && i <= userVal3){
-                         userVal4 % i === userVal3 % i === 0 ? document.write(`<h2>Общий делитель`${i}`</h2>`) : document.write(``);  break outer;
+                         userVal4 % i === userVal3 % i === 0 ? document.write(`<h2>Общий делитель ${i}</h2>`) : document.write(``);  break;
                     } else {
                         document.write(`<h2>нет общих делителей</h2>`);
                        

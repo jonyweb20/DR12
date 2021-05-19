@@ -3,62 +3,100 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
     <title>DZ12</title>
+    <script src="ind.js" defer></script>
 </head>
-
 <body>
-    <script>
-        //Задание с WHILE
+<div class="sector">
+    <h1>Цикл While</h1>
+    <div class="block">
+        <h2>Задание №1</h2>
+        <h3>Вывести # столько раз, сколько будет указано</h3>
+        <p>Ввести число: <input type="text" placeholder="Введите число" id="n1"></p>
+        <button onclick="GetList()">Показать</button>
+        <hr>
+        <p id="out">Результат: </p>
 
-        //Задание №1
-        /*     i= 0
-             let userValue = +prompt(`Сколько раз необходимо вывести на экран "#"`)
-            while (i < userValue) {
-                 i++;
-                document.write(`<h2>${i} . # </h2>`)
-            }
-             */
+    </div>
+    <div class="block">
+        <h2>Задание №2</h2>
+        <h3>Вывести числа от введеного до 0</h3>
+        <p>Ввести число: <input type="text" placeholder="Введите число" id="n2"></p>
+        <button onclick="GetListTwo()">Показать</button>
+        <hr>
+        <p id="out2">Результат: </p>
+    </div>
+    <div class="block">
+        <h2>Задание №3</h2>
+        <h3>Вывести число и степень</h3>
+        <p>Ввести число: <input type="text" placeholder="Введите число" id="n3"></p>
+        <p>Ввести число: <input type="text" placeholder="Введите степень" id="n4"></p>
+        <button onclick="GetListThree()">Показать</button>
+        <hr>
+        <p id="out3">Результат: </p>
+    </div>
+    <div class="block">
+        <h2>Задание №4</h2>
+        <h3>Найти общие делители</h3>
+        <p>Ввести число: <input type="text" placeholder="Введите число" id="n5"></p>
+        <p>Ввести число: <input type="text" placeholder="Введите степень" id="n6"></p>
+        <button onclick="GetListFour()">Показать</button>
+        <hr>
+        <p id="out4">Результат: </p>
+    </div>
+    <div class="block">
+        <h2>Задание №5</h2>
+        <h3>Вывести факториал числа</h3>
+        <p>Ввести число: <input type="text" placeholder="Введите число" id="n7"></p>
+        <button onclick="GetListFive()">Показать</button>
+        <hr>
+        <p id="out5">Результат: </p>
+    </div>
+</div>
+<div class="sector two">
+    <h1>Цикл Do...While</h1>
+    <div class="block">
+        <h2>Задание №1</h2>
+        <h3>Решить пример 2+2*2</h3>
+        <p>Ввести число: <input type="text" placeholder="Введите число" id="n11"></p>
+        <button onclick="GetListSix()">Показать</button>
+        <hr>
+        <p id="out6">Результат: </p>
 
-        //Задание №2
-        /* i = 1;
-          let userVal = +prompt(`Укажите число`);
-         while (i <= userVal && 0 < i) {
-             document.write(`<h2>Ваше значение ${i}</h2>`);
-             i++;}*/
+    </div>
+    <div class="block">
+        <h2>Задание №2</h2>
+        <h3>Делить число 1000 на 2 до значения менее 50</h3>
+        <p>Ввести число: <input type="text" placeholder="Введите число 1000" id="n12"></p>
+        <button onclick="GetListSeven()">Показать</button>
+        <hr>
+        <p id="out7">Результат: </p>
+    </div>
+</div>
 
-        //Задание №3
-        /* i = 1
-         let userVal1 = +prompt(`Укажите числo`);
-         let userVal2 = +prompt(`Укажите степень числа`);
-         while (i < userVal2 && 0 < i) {
-            i++;}
-          document.write(`<h2>Ваше значение ${userVal1 ** userVal2}</h2>`);*/
+    <div class="sector Three">
+        <h1>Цикл FOR</h1>
+        <div class="block">
+            <h2>Задание №1</h2>
+            <h3>Показать все значения от 1 до 100 кратные введеному</h3>
+            <p>Ввести число: <input type="text" placeholder="Введите число" id="n13"></p>
+            <button onclick="GetListEight()">Показать</button>
+            <hr>
+            <p id="out8">Результат: </p>
 
-        //Задание №4
-        i = 1;
-        let userVal3 = +prompt(`Укажите первое числo`);
-        let userVal4 = +prompt(`Укажите второе числа`);
-        while (i < userVal3 && i < userVal4) {
-            if (userVal3 === isNaN || userVal4 === isNaN) {
-                document.write(`<h2>неверно указаны числа</h2>`)
-                break;
-            } 
-            else {
-               while (true) {
-                    i++;
-                    if (i <= userVal4 && i <= userVal3){
-                         userVal4 % i === userVal3 % i === 0 ? document.write(`<h2>Общий делитель ${i}</h2>`) : document.write(``);  break;
-                    } else {
-                        document.write(`<h2>нет общих делителей</h2>`);
-                       
-                        }
-
-                    }
-                }
-            }
-        
-
-    </script>
+        </div>
+        <div class="block">
+            <h2>Задание №2</h2>
+            <h3>Вывести каждый четвертый элемент из  выбранного диапазона</h3>
+            <p>Введите начало диапазона: <input type="text" placeholder="Введите первое число" id="n14"></p>
+            <p>Введите начало диапазона: <input type="text" placeholder="Введите второе число" id="n15"></p>
+            <button onclick="GetListNine()">Показать</button>
+            <hr>
+            <p id="out9">Результат: </p>
+        </div>
+</div>
 </body>
 
 </html>
